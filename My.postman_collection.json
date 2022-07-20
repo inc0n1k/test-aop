@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "a396f532-2837-4fae-a700-07d028e5a803",
+		"name": "My",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15380063"
+	},
+	"item": [
+		{
+			"name": "type",
+			"item": [
+				{
+					"name": "/aop/dictionary/type/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"01\",\r\n    \"nameRu\":\"Тенге РУ val\",\r\n    \"nameKk\":\"Тенге Кк\",\r\n    \"nameEn\":\"Тенге Ен\",\r\n    \"shortNameRu\":\"Тенге РуС val\",\r\n    \"shortNameKk\":\"Тенге КкС\",\r\n    \"shortNameEn\":\"Тенге ЕнС\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/type/update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newTypeCode\":\"01\",\r\n    \"code\":\"TestCode\",\r\n    \"nameRu\":\"Тенге РУ val\",\r\n    \"nameKk\":\"Тенге Кк\",\r\n    \"nameEn\":\"Тенге Ен\",\r\n    \"shortNameRu\":\"Тенге РуС val\",\r\n    \"shortNameKk\":\"Тенге КкС\",\r\n    \"shortNameEn\":\"Тенге ЕнС\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/type/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"01\",\r\n    \"nameRu\":\"Тенге РУ val\",\r\n    \"nameKk\":\"Тенге Кк\",\r\n    \"nameEn\":\"Тенге Ен\",\r\n    \"shortNameRu\":\"Тенге РуС val\",\r\n    \"shortNameKk\":\"Тенге КкС\",\r\n    \"shortNameEn\":\"Тенге ЕнС\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/delete?code=codeType0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "codeType0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/type/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/type/all-page",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":0,\r\n    \"size\":10,\r\n    \"direction\":\"ASC\",\r\n    \"sort\":\"code\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/all-page",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"all-page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/type/code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":0,\r\n    \"size\":10,\r\n    \"direction\":\"ASC\",\r\n    \"sort\":\"code\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/type/code?code=codeType0&displayType=FULL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"type",
+								"code"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "codeType0"
+								},
+								{
+									"key": "displayType",
+									"value": "FULL"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "value",
+			"item": [
+				{
+					"name": "/aop/dictionary/value/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dictionaryTypeCode\":\"codeType0\",\r\n    \"code\": \"codeValue00\",\r\n    \"nameRu\": \"nameTypeRu1\",\r\n    \"nameKk\": \"nameTypeKk1\",\r\n    \"nameEn\": \"nameTypeEn1\",\r\n    \"shortNameRu\": \"shortNameTypeRu1\",\r\n    \"shortNameKk\": \"shortNameTypeKk1\",\r\n    \"shortNameEn\": \"shortNameTypeEn1\",\r\n    \"parentCode\":\"codeValue0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/value/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dictionaryTypeCode\":\"01\",\r\n    \"code\": \"codeValue1\",\r\n    \"nameRu\": \"nameTypeRu11\",\r\n    \"nameKk\": \"nameTypeKk11\",\r\n    \"nameEn\": \"nameTypeEn11\",\r\n    \"shortNameRu\": \"shortNameTypeRu11\",\r\n    \"shortNameKk\": \"shortNameTypeKk11\",\r\n    \"shortNameEn\": \"shortNameTypeEn11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/value/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"01\",\r\n    \"nameRu\":\"Тенге РУ val\",\r\n    \"nameKk\":\"Тенге Кк\",\r\n    \"nameEn\":\"Тенге Ен\",\r\n    \"shortNameRu\":\"Тенге РуС val\",\r\n    \"shortNameKk\":\"Тенге КкС\",\r\n    \"shortNameEn\":\"Тенге ЕнС\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/value/delete?typeCode=codeType1&valueCode=codeValue1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "typeCode",
+									"value": "codeType1"
+								},
+								{
+									"key": "valueCode",
+									"value": "codeValue1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8888/aop/dictionary/value/all?typeCode=codeType0&displayType=FULL",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"all"
+							],
+							"query": [
+								{
+									"key": "typeCode",
+									"value": "codeType0"
+								},
+								{
+									"key": "displayType",
+									"value": "FULL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/all-page",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":0,\r\n    \"size\":10,\r\n    \"direction\":\"ASC\",\r\n    \"sort\":\"id\",\r\n    \"displayType\":\"FULL\",\r\n    \"typeCode\":\"codeType0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8888/aop/dictionary/value/all-page",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"all-page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/by-codes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8888/aop/dictionary/value/codes?valueCode=codeValue1&typeCode=codeType1&displayType=FULL",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"codes"
+							],
+							"query": [
+								{
+									"key": "valueCode",
+									"value": "codeValue1"
+								},
+								{
+									"key": "typeCode",
+									"value": "codeType1"
+								},
+								{
+									"key": "displayType",
+									"value": "FULL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/value/tree",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8888/aop/dictionary/value/tree?code=codeType0&displayType=FULL",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"tree"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "codeType0"
+								},
+								{
+									"key": "displayType",
+									"value": "FULL"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "setting",
+			"item": [
+				{
+					"name": "/aop/dictionary/setting/update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeCode\":\"codeType1\",\r\n    \"valueCode\":\"codeValue1\",\r\n    \"settings\":{\r\n        \"price\":\"742.0\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/setting/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"setting",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/setting/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/setting/all?typeCode=codeType1&valueCode=codeValue1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"setting",
+								"all"
+							],
+							"query": [
+								{
+									"key": "typeCode",
+									"value": "codeType1"
+								},
+								{
+									"key": "valueCode",
+									"value": "codeValue1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "other-request",
+			"item": [
+				{
+					"name": "/aop/dictionary/value/request/all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeCode\":\"01\",\r\n    \"searchByName\":\"\",\r\n    \"searchByCode\":\"\",\r\n    \"parameters\":{\r\n\r\n    },\r\n    \"displayType\":\"FULL\",\r\n    \"requestType\":\"EQUALS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/value/request/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"value",
+								"request",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "/aop/test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"branch\":3,\r\n    \"name\":\"name\",\r\n    \"description\":\"description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "config",
+			"item": [
+				{
+					"name": "/aop/dictionary/config/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeCode\":\"codeType1\",\r\n    \"type\":\"DOUBLE\",\r\n    \"code\":\"price\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/config/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"config",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/config/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/config/delete?typeCode=codeType1&configCode=codeSetting1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"config",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "typeCode",
+									"value": "codeType1"
+								},
+								{
+									"key": "configCode",
+									"value": "codeSetting1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/aop/dictionary/config/code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/aop/dictionary/config/code?code=codeType1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"aop",
+								"dictionary",
+								"config",
+								"code"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "codeType1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
